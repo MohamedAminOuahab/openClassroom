@@ -75,10 +75,9 @@ h2{
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-
-    width: Fill (1,340px);
-    height: Hug (611.5px);
-    gap: 40px;
+    width: 100%;
+    height: auto;
+    gap: 0px 40px;
 
 }
 
@@ -121,8 +120,8 @@ h2{
     margin-bottom: 30px;
 }
 .hebergements-cards .card-content{
-    width: Fill (150.33px);
-    height: Hug (64.25px);
+    width: 100%;
+    height: auto;
     padding: 0px 15px 0px 15px;
     gap: 4px;
 }
@@ -262,8 +261,8 @@ nav {
 }
 
 header .logo{
-    width: Hug (161.09px);
-    height: Hug (79px);
+    width: 100%;
+    height: auto;
     padding: 30px 50px 30px 50px;
     gap: 10px;
 }
@@ -338,8 +337,6 @@ padding: 0;
 
     width: max-content;
     border-radius: 15px;
-
-    background: linear-gradient(0deg, #F2F2F2, #F2F2F2),
 }
 
 #search-bar input , #search-bar label , #search-bar button{
@@ -424,9 +421,7 @@ padding: 0;
 }
 
 #filter-find  button:hover{
-    width: Hug (167px);
-    height: Fixed (50px);
-    padding: 4px 19px 4px 19px;
+   
     background: linear-gradient(0deg, #DEEBFF, #DEEBFF),
     linear-gradient(0deg, #D9D9D9, #D9D9D9);
     border: 2px solid #D9D9D9;
@@ -468,7 +463,7 @@ padding: 0;
     border-radius: 20px;
 
     width: 100%;
-    height: Fixed (439px);
+    height: 439px;
 }
 
 #activite-ville .content{
@@ -513,8 +508,8 @@ padding: 0;
 
 }
 #activite-ville{
-    width: Fill (1,280px);
-    height: Hug (439px);
+    width: 100%;
+    height: auto;
 	margin-top: 70px;
     gap: 30px;
 }
@@ -533,8 +528,8 @@ footer{
 
 .footer-section{
     flex: 1;
-    width: Fill (446.67px);
-    height: Fill (163px);
+    width: 100%;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px ;
     gap: 15px;
@@ -653,7 +648,7 @@ li
     }
     header{
         width: 100%;
-        height: Hug (115px);
+        height: auto;
         margin-left: 0px;
         padding: 0px;
         position: initial;
@@ -702,8 +697,8 @@ li
     }
     
     header img {
-        width: Hug (121.09px);
-        height: Hug (79px);
+        width: 100%;
+        height: auto;
         position: initial;
         gap: 20px;
     }
@@ -1010,8 +1005,8 @@ li
 
 #filter-find  button:hover
 {
-    width: Hug (167px);
-    height: Fixed (50px);
+    width: 100%;
+    height: auto;
     padding: 4px 19px 4px 19px;
     background: linear-gradient(0deg, #DEEBFF, #DEEBFF),
     linear-gradient(0deg, #D9D9D9, #D9D9D9);
@@ -1051,5 +1046,4 @@ li
     margin: auto;
     gap : 30px 20px;
 }
-
 }
