@@ -93,10 +93,10 @@ h2{
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 200%;
+    width: 100%;
     height: auto;
     border-radius: 15px;
-    gap: 50px;
+    gap: 30px;
     padding: 20px;
 
 }
@@ -143,6 +143,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 10px;
+    margin-left: -10px ;
     gap: 30px;
 }
 
@@ -181,7 +182,7 @@ h2{
 
 /****** Populaires ***********/
 .populaires {
-    width: 100%;
+    width: 50%;
 }
 .populaires-title {
     display: flex;
@@ -463,14 +464,14 @@ padding: 0;
     border-radius: 20px;
 
     width: 100%;
-    height: 439px;
+    height: auto;
 }
 
 #activite-ville .content{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 25px;
     margin-left : 20px ;
-    margin-right:20px ;
+    margin-right: 0px;
     gap: 30px;
 }
 #activite-ville img {
@@ -483,12 +484,11 @@ padding: 0;
 
     gap: 10px;
     background: #FFFFFF;
-   
-    height: max-content;
-    padding: 10px;
+    padding-left: 10px;
+    height: 50px;
+    display:flex;
+    align-items: center;
     border-radius: 0px 0px 20px 20px;
-    gap: 30px;
-
 }
 
 #activite-ville #title-activite{
@@ -497,8 +497,10 @@ padding: 0;
     font-size: 22px;
 }
 
-#activite-ville  .content{ 
-    padding-right: 30px;
+#activite-ville  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    padding-right: 30px
 }
 
 #activite-ville .card-txt .card-title {
@@ -593,17 +595,16 @@ li
         padding: 30px;
     }
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
 
-    .populaires-cards .card {
-        width: 33%;
-        height: max-content;
+    .populaires-cards a:hover{
+        padding: 0;
+        text-decoration: none;
     }
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
@@ -611,6 +612,7 @@ li
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 /*===================== section des activiter ================================*/
 
     #activite-ville .card img {
@@ -663,14 +665,10 @@ li
         flex-wrap: wrap;
     }
     
-    header .logo{
-        display: flex;
-        justify-content: center;
+    header .logo
+    {
         position: initial;
-        text-align: center;
-        margin-top: 10px;
-        padding: 20px 50px 20px 50px;
-        gap: 0px;
+        width: 150px;
     }
    
 
@@ -731,11 +729,21 @@ li
     /* ========================================================================================= */
     .hebergements-and-populaires .populaires {
         width: 100%;
-        height: Hug (569px);
+        height: auto;
         border-radius: 0%;
         padding: 0px;
         gap: 30px;
 
+    }
+    .hebergements .card{
+        width: 100%;
+    }
+    .populaires-cards {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
     }
 
     .populaires-title {
@@ -810,42 +818,29 @@ li
     {
         margin-bottom: 5px;
     }
-
-    .populaires-cards
-    {
-        flex-direction: column;
-    }
+    
     /* ============================================== */
     
     .hebergements-and-populaires .hebergements {
         background: #ffffff;
-        margin: auto;
     }
    
     .hebergements-title{
         display: flex;
-        margin-left: 10px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-   
-    .hebergements-cards .card{
-        width: 108%;
+    .hebergements .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .content{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 30px;
-        justify-content: space-between;
-        padding-right: 30px;
-    }
+
     #plus{
         /* //styleName: Title/Filter; */
         font-family: Raleway;
         font-size: 18px;
         font-weight: 700;
-        margin-top: -10px;
+       
         margin-left: 20px ;
         text-align: left;
     
@@ -857,16 +852,26 @@ li
         padding-top: 30px;
         gap: 20px;
     }
+
     .footer-section{
         margin-top: 20px;
     }
+
 /* ===================================== section des activiter ================================*/
     #activite-ville .card{
-        width: 110%; 
+        width: 100%;
+        margin: auto; 
     }
 
-    #title-activite{
-        margin: 20px;
+  
+
+    #activite-ville .content
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-right: 1px;
+        margin-left: 30px ;
     }
 
 /*========================= section de recherche =============================== */
@@ -906,8 +911,7 @@ li
     margin-left: 15px;
     width: 100%;
     border-radius: 15px;
-
-    background: linear-gradient(0deg, #F2F2F2, #F2F2F2),
+    
 }
 
 #search-bar input , #search-bar label , #search-bar button{
@@ -990,9 +994,6 @@ li
     padding: 4px 19px 4px 19px;
     margin-top: -10px;
     border-radius: 25px;
-    
-    
-
 
     cursor: pointer;
 
@@ -1033,16 +1034,12 @@ li
 
 #header-info{
     display: flex;
-    gap: 15px;
-    margin: auto;
-    margin-bottom: -10px;
     align-items: center;
 }
 
 #filter-find-btn{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 4fr;
     margin: auto;
     gap : 30px 20px;
 }
