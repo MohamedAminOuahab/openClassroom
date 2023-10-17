@@ -195,7 +195,7 @@ h2{
     margin-top: 28px;
 }
 .populaires-cards img {
-    width: 90px;
+    width: 95px;
     height: 115px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -768,7 +768,6 @@ li
         margin-bottom: 30px;
     }
     .populaires-cards img {
-        width: 20%;
         height: 136px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
